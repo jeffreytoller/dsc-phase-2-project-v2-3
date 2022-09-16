@@ -17,15 +17,15 @@ Waterfront, view, zipcode, condition, grade, and date are categorical data, of w
 ### Dropping and Feature Engineering
 We ended up dropping the variables 'yr_built', 'date', 'lat', 'long', 'floors', and 'id'.
 The yr_built, lat, long and floors we engineered into more useful variables and date and id we simply dropped.
-For example we used the latitude and longitude to calculate the properties distance from Seattle city center.
+For example we used the latitude and longitude to calculate the properties distance from Seattle's city center.
 
 ### Normalizing
 
 
 # Models:
-As we are trying to predict the price, logically price is going to be our target variable (y value). This predicted 
+As we are trying to predict the price, logically price is going to be our target variable (y value). 
 ### Baseline Model:
-As sqft_living was our feature most correlated with price it was the one baseline model used. Obviously, this simple baseline model did not perform well as the R2 (Coefficient of Determination) could only account for *insert amount* of the variation.  This makes intuitive sense as more than one factor influences the price of a house.
+As sqft_living was our feature most correlated with price it was the one baseline model used. Obviously, this simple baseline model could only account for 69.66% of the variation.  The train test split was 70-30.  This makes intuitive sense as more than one factor (even a fairly obvious one like a houses' size) influences the price of a house.
 *post graph here*
 
 
