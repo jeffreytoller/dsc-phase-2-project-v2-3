@@ -25,7 +25,7 @@ Waterfront, view, zipcode, condition, grade, and date are categorical data, of w
 ### Dropping and Feature Engineering
 We ended up dropping the variables 'yr_built', 'date', 'lat', 'long', 'floors', and 'id'.
 The yr_built, lat, long and floors we engineered into more useful variables and date and id we simply dropped.
-For example we used the latitude and longitude to calculate the properties distance from Seattle city center.
+For example we used the latitude and longitude to calculate the properties distance from Seattle's city center.
 
 ### Normalizing
 Our second model (multivariate WITHOUT interactions) is normalized so we can compare the relative importances of our variables.
